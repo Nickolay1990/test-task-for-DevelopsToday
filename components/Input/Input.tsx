@@ -1,12 +1,12 @@
 "use client";
 
-import { ChangeEvent, MouseEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import css from "./Input.module.css";
 
 interface InputProps {
   placeholder: string;
   clearable?: boolean;
-  type: string;
+  type: "number" | "text" | "password";
 }
 
 export const Input = ({ type, placeholder, clearable }: InputProps) => {
@@ -35,13 +35,13 @@ export const Input = ({ type, placeholder, clearable }: InputProps) => {
         onChange={handleInputChange}
       ></input>
       {type === `password` && (
-        <button className={css.eye} onClick={handleShowText}>
+        <button className={`${css.eye} ${css.btn}`} onClick={handleShowText}>
           {isShow && inputValue ? "👁️" : "👁️‍🗨️"}
         </button>
       )}
       {clearable && (
         <button
-          className={`${css.clear} ${type === "password" && css.clearWithEye}`}
+          className={`${css.clear} ${css.btn} ${type === "password" && css.clearWithEye}`}
           onClick={handleClearText}
         >
           ❌

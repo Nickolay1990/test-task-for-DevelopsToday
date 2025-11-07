@@ -1,0 +1,35 @@
+.wrapper {
+  min-width: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border: 2px solid rgb(210, 228, 238);
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s;
+}
+
+.success {
+  background-color: rgb(42, 247, 151);
+}
+
+.error {
+  background-color: rgb(243, 129, 101);
+}
+
+.btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
