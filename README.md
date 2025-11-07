@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Моя бібліотека компонентів
 
-## Getting Started
+## Input
 
-First, run the development server:
+Порожній стан:  
+![Input порожній](screenshots/empty-number-with-reset.png)
+![Input порожній](screenshots/empty-number-without-reset.png)
+![Input порожній](screenshots/empty-pass-with-eye.png)
+![Input порожній](screenshots/empty-pass-without-eye-reset.png)
+![Input порожній](screenshots/empty-text-with-reset.png)
+![Input порожній](screenshots/empty-text-without-reset.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Заповнений стан:  
+![Input заповнений](screenshots/full-number-with-reset.png)
+![Input заповнений](screenshots/full-number-without-reset.png)
+![Input заповнений](screenshots/full-pass-with-eye-reset.png)
+![Input заповнений](screenshots/full-pass-with-eye.png)
+![Input заповнений](screenshots/full-pass-with-out-eye.png)
+![Input заповнений](screenshots/full-text-with-reset.png)
+![Input заповнений](screenshots/full-text-without-reset.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Toast
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Відкритий Toast:  
+![Toast успішний](screenshots/success-toast.png)
+![Toast помилки](screenshots/error-toast.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Sibebar
 
-## Learn More
+Закритий Sidebar:
+![Закритий Sidebar](screenshots/closed-sidebar.png)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Відкритий Sidebar:
+![Відкритий Sidebar](screenshots/open-sidebar-1th.png)
+![Відкритий Sidebar](screenshots/open-sidebar-2th-closed.png)
+![Відкритий Sidebar](screenshots/open-sidebar-2th-opend.png)

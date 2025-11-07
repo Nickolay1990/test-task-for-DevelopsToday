@@ -1,0 +1,89 @@
+.sideBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(124, 188, 243);
+  height: 100vh;
+  padding: 30px;
+  min-width: 200px;
+  box-shadow: none;
+  transform: translateX(100%);
+  transition: transform 250ms;
+}
+
+.isOpen {
+  transform: translateX(0);
+  box-shadow: -12px 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.mainList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.menuTitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.arrowDown {
+  vertical-align: -3px;
+}
+
+.arrowUp {
+  vertical-align: 2px;
+}
+
+.secondList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 0 20px;
+  list-style-type: none;
+}
+
+.openBtn {
+  cursor: pointer;
+  transition: color 250ms;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.openBtn:hover {
+  color: rgb(117, 132, 145);
+}
+
+.link {
+  transition: color 250ms;
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(117, 132, 145);
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.arrowSideBar {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgb(124, 188, 243);
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  z-index: 9999;
+  border: none;
+}
